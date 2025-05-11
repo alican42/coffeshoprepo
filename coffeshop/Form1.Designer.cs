@@ -40,6 +40,7 @@
             button2 = new Button();
             label5 = new Label();
             pictureBox1 = new PictureBox();
+            label6 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -50,7 +51,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(395, 289);
+            button1.Location = new Point(386, 383);
             button1.Name = "button1";
             button1.Size = new Size(94, 33);
             button1.TabIndex = 0;
@@ -62,7 +63,8 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label1.Location = new Point(686, 9);
+            label1.ForeColor = Color.Red;
+            label1.Location = new Point(701, 9);
             label1.Name = "label1";
             label1.Size = new Size(23, 24);
             label1.TabIndex = 1;
@@ -71,6 +73,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(7, 99, 102);
+            panel1.Controls.Add(label6);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(button2);
@@ -85,7 +88,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label2.Location = new Point(393, 70);
+            label2.Location = new Point(393, 152);
             label2.Name = "label2";
             label2.Size = new Size(131, 27);
             label2.TabIndex = 3;
@@ -95,7 +98,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 10.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
-            label3.Location = new Point(393, 112);
+            label3.Location = new Point(393, 206);
             label3.Name = "label3";
             label3.Size = new Size(129, 21);
             label3.TabIndex = 4;
@@ -104,7 +107,7 @@
             // textBox1
             // 
             textBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            textBox1.Location = new Point(395, 136);
+            textBox1.Location = new Point(395, 230);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(314, 30);
             textBox1.TabIndex = 5;
@@ -112,7 +115,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            textBox2.Location = new Point(395, 212);
+            textBox2.Location = new Point(393, 301);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(314, 30);
             textBox2.TabIndex = 7;
@@ -122,7 +125,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 10.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
-            label4.Location = new Point(393, 188);
+            label4.Location = new Point(395, 277);
             label4.Name = "label4";
             label4.Size = new Size(61, 21);
             label4.TabIndex = 6;
@@ -133,7 +136,7 @@
             // 
             checkBox1.AutoSize = true;
             checkBox1.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            checkBox1.Location = new Point(395, 248);
+            checkBox1.Location = new Point(395, 337);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(85, 23);
             checkBox1.TabIndex = 8;
@@ -175,6 +178,17 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Arial", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(80, 212);
+            label6.Name = "label6";
+            label6.Size = new Size(200, 27);
+            label6.TabIndex = 10;
+            label6.Text = "Kahve Dükkanım";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -214,5 +228,6 @@
         private Button button2;
         private Label label5;
         private PictureBox pictureBox1;
+        private Label label6;
     }
 }
