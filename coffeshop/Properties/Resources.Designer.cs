@@ -59,5 +59,15 @@ namespace coffeshop.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Cafe_100px_6__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Cafe_100px_6 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
